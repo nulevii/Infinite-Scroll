@@ -1,0 +1,131 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+</style> 
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Stalinist One', cursive;
+  background-image: url(cats.webp);
+  background-size: 13% auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 3.2rem;
+  margin-top:25px;
+  margin-bottom: 15px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 30px;
+  letter-spacing:1px;
+  background-color:whitesmoke;
+  padding: 20px 20px
+}
+
+
+
+
+
+/* Loader started */
+.triforce-wrapper {
+ 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+  .triforce {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+
+    font-size: 5.5rem;
+    margin: -2.464636em 0 0 -1em;
+    width: 0;
+    height: 0;
+    position: relative;
+
+  }
+  .triforce, .triforce::before, .triforce::after {
+    border-width: 0 1em 1.732em 1em;
+    border-style: solid;
+    border-color: transparent transparent #000000 transparent;
+    -webkit-animation: triforce-blink 1s infinite ease-in-out;
+    animation: triforce-blink 1s infinite ease-in-out;
+  }
+  .triforce:before, .triforce:after {
+    top: 1.732em;
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+  }
+  .triforce::before {
+    left: 0em;
+    animation-delay: 0.3333333333s;
+  }
+  .triforce::after {
+    left: -2em;
+    animation-delay: 0.6666666667s;
+  }
+  
+  @-webkit-keyframes triforce-blink {
+    0% {
+      border-bottom-color: #000000;
+    }
+    50% {
+      border-bottom-color: rgba(255, 255, 255, 0.07);
+    }
+    100% {
+      border-bottom-color: #000000;
+    }
+  }
+
+/* Image Container */
+.image-container{
+  margin:10px 30%;
+}
+
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 1400px) {
+  h1{
+    font-size: 2rem;
+    margin-left: 15% ;
+    margin-right: 15% ;
+  }
+  .image-container{
+    margin: 10px 15%;
+  }
+}
+@media screen and (max-width: 800px) {
+  body{
+   
+  }
+  h1{
+    font-size: 1.3rem;
+    margin-left:2rem;
+    margin-right: 2rem;
+  }
+  .image-container{
+    margin: 10px;
+  }
+  .image{
+    margin: 15px 0;
+  }
+}
