@@ -10,7 +10,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Stalinist One', cursive;
-  background-image: url(cats.png);
+  background-image: url(cats.svg);
   background-size: 13% auto;
 }
 
@@ -100,6 +100,7 @@ h1{
 .image-container img {
   width: 100%;
   margin-top: 5px;
+  border-radius: 1rem;
 }
 
 /* Media Query: Large Smartphone */
@@ -126,6 +127,6 @@ h1{
     margin: 10px;
   }
   .image{
-    margin: 15px 0;
+    margin: 5px 0;
   }
 }
