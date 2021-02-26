@@ -10,7 +10,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Stalinist One', cursive;
-  background-image: url(cats.svg);
+  background-image: url(cats.svg), url(cats.png);
+
   background-size: 13% auto;
 }
 
